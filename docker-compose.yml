@@ -1,0 +1,7 @@
+services:
+  nebula:
+    build: .
+    restart: unless-stopped
+    volumes:
+    - /config:/config:ro
+version: '2.4'
