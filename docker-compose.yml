@@ -4,4 +4,8 @@ services:
     restart: unless-stopped
     volumes:
     - ./config:/config:ro
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
 version: '2.4'
