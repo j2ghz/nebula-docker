@@ -8,4 +8,6 @@ services:
       - NET_ADMIN
     devices:
       - /dev/net/tun
+    ports:
+      - "4252:4252/udp"
 version: '2.4'
