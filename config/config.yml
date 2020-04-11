@@ -154,11 +154,11 @@ firewall:
   #     proto: any
   #     host: any
 
-  # inbound:
+  inbound:
   #   # Allow icmp between any nebula hosts
-  #   - port: any
-  #     proto: icmp
-  #     host: any
+    - port: any
+      proto: icmp
+      host: any
 
     # Allow tcp/443 from any host with BOTH laptop and home group
     #- port: 22
